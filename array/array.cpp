@@ -79,6 +79,8 @@ public :
             cout << "Array is full \n";
     }
     
+
+    // insert at specific index 
     void Insert(int index, int newitem)
     {
         if (index >= 0 && index < size)
@@ -95,6 +97,7 @@ public :
             cout << " Error - Index out of Range \n";
         }
     }
+    //delete item with specific index
         void Delete(int index)
     {
         if (index >= 0 && index < size)
@@ -106,7 +109,10 @@ public :
         else
             cout << "Index out of Array Range \n";
     }
-        void Enlarge(int newsize)
+
+    // Create new size for array
+   
+    void Enlarge(int newsize)
     {
         if (newsize <= size)
         {
